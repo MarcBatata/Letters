@@ -1,0 +1,146 @@
+body {
+    background-color: #000000;
+    /* overflow: hidden; */
+}
+
+.navbar {
+    background-color: #333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    /* text-align: center; */
+    margin-top: 50px;
+}
+
+/* main::after {
+    /* content: "🖤🤍💜💛💚💙💘💗💓💔💖🤎🧡❣💞💟"; *
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: violet; *
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%) no-repeat;
+} */
+
+main .character {
+    display: none;
+    height: 100vh;
+}
+
+main .character.selected {
+    display: block;
+}
+
+main .character .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    /* background-color: orange; */
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.content .character-name {
+    /* background-color: green; */
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content .description {
+    /* background-color: blue; */
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Rubik";
+    line-height: 24px;
+}
+
+/* .content .logo {
+    * background-color: aquamarine; *
+    background-image: url(../images/image\ \(65\).png);
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+} */
+
+.buttons {
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.buttons .button {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    outline: none;
+    background: #ffffff;
+    border-radius: 50%;
+}
+
+/* .buttons .button img {
+    border-radius: 50%;
+} */
+
+.buttons .button .image-container {
+    overflow: hidden;
+    border-radius: 50%;
+    /* background-color: #000; */
+    /* box-shadow: 0 0 0 5px #000; */
+}
+
+.buttons .button .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.buttons .button.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+}
